@@ -1,0 +1,42 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <div id="index-category">
+        <h2 class="letter-red">Create new listing</h2>
+        <form id="listingForm" action="{% url 'create' %}" method="POST">
+
+            {% csrf_token %}
+            <div class="input-width" style="font-weight: bold;">
+                <p>Item you want to sell (Required)</p>
+                <div class="input-group mb-3">
+                    <input type="text" id="titleInput" class="form-control" name="title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <p>Description (Required)</p>
+                <div class="form-floating mb-3">
+                    <textarea type="text" id="descriptionInput" name="description" class="form-control descrip"></textarea>
+                </div>
+                <p>Bidding Starts At (Required) </p>
+                <div class="input-group mb-3">
+                    <input type="number" id="startBidInput" class="form-control" name="start_bid" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="form-floating mb-3">
+                    <p>Category (Required)</p>
+                    <select name="category" id="categoryInput" class="form-select" aria-label="Floating label select example">
+                        <option selected>ALL</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <p>Image URL (Optional)</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="img_url" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn button-red">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

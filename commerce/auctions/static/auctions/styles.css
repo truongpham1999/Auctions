@@ -1,0 +1,151 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+.blue
+{
+    color: #537fbe;
+}
+.red
+{
+    color: #ea433b;
+}
+.yellow
+{
+    color: #f5b82e;
+}
+.green
+{
+    color: #2e944b;
+}
+
+.button-red
+{
+    background-color: #8a1440;
+    color: white;
+}
+
+.red-letter {
+    color: #8a1440;
+}
+
+.letter-red, .letter-red a {
+    color: #8a1440;
+}
+
+.product-size {
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.img-listing {
+    max-width: 100%;  /* Adjusted from fixed size to a responsive size */
+    height: auto;  /* Height auto to maintain aspect ratio */
+    border-radius: 15px;
+}
+
+#index-category {
+    padding-left: 37px;
+    margin: 10px;
+}
+
+.custom-select {
+    width: 200px;
+}
+
+.custom-list {
+    padding-top: 15px;
+}
+
+
+.watchlist {
+    padding-left: 37px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+#index-category .input-width {
+    width: 700px;
+}
+
+#index-category .descrip{
+    height: 200px !important;
+}
+
+.frame {
+    border: 2px solid #000000; /* change to desired border color */
+    padding: 10px; /* change to desired padding */
+    border-radius: 10px; /* change to desired border radius */
+    margin-bottom: 20px; /* change to desired margin */
+}
+
+input[name="added_bid"] {
+    height: 40px;
+}
+
+#commentInput {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+#bid-btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+/* Change input border */
+input[type="text"],
+input[type="number"],
+textarea[id="commentInput"],
+select[id="floatingSelect"],
+textarea[id="descriptionInput"],
+select[id="categoryInput"],
+select[id="category"] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #index-category .input-width {
+        width: 100%;
+    }
+    #index-category .input-width {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #index-category .input-width {
+        width: 100%;
+    }
+    .input-group {
+        flex-wrap: wrap;
+    }
+    .input-group .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .col-auto {
+        text-align: center;
+    }
+    .img-listing {
+        max-width: 100%;  /* Full width for extra small devices */
+    }
+
+}
