@@ -23,6 +23,7 @@ This project is an e-commerce auctions site that allows users to register an acc
 - Bootstrap
 - SQLite
 - ORM
+- Responsive design for mobile and desktop
 
 ## Requirements
 You only need to have Django installed. You can install it using pip:
