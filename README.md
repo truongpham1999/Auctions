@@ -22,11 +22,8 @@ This project is an e-commerce auctions site that allows users to register an acc
 - CSS
 - Bootstrap
 - SQLite
-- ORM
+- Django ORM
 - Responsive design for mobile and desktop
-
-## Requirements
-You only need to have Django installed. You can install it using pip:
 
 ## Code Structure
 The project contains the following important files:
@@ -51,4 +48,3 @@ For more details on the code, please refer to the comments in each file.
 2. Navigate to the project directory.
 3. Run the following command to start the Django server:
    + python manage.py runserver
-4. Access the application at `localhost:8000` in your web browser.
