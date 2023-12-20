@@ -25,24 +25,6 @@ This project is an e-commerce auctions site that allows users to register an acc
 - Django ORM
 - Responsive design for mobile and desktop
 
-## Code Structure
-The project contains the following important files:
-
-1. `models.py`: This file contains the database models used in the project. We have five models:
-   - `User`: Represents a user in the system.
-   - `Category`: Represents a category that a listing belongs to.
-   - `Listings`: Represents a listing in the auction site.
-   - `Bids`: Represents a bid placed by a user on a listing.
-   - `Comments`: Represents a comment made by a user on a listing.
-
-2. `admin.py`: This file is used to customize the Django admin site. It includes `UserAdmin`, `CategoryAdmin`, `ListingsAdmin`, `BidsAdmin`, and `CommentsAdmin` for managing the corresponding models.
-
-3. `urls.py`: This file contains all the URL mappings for the application.
-
-4. `views.py`: This file contains all the views for the application. Each view is a function that takes a Web request and returns a Web response.
-
-For more details on the code, please refer to the comments in each file.
-
 ## Running the application
 1. Clone this repository.
 2. Navigate to the project directory.
